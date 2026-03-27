@@ -1,0 +1,31 @@
+# Base Kaggle stack — copy to competition repo and add competition-specific deps
+# Check Kaggle kernel versions: import pandas; print(pandas.__version__)
+# Pin versions after verifying they match Kaggle environment
+
+# Core
+pandas
+numpy
+scikit-learn
+
+# Gradient Boosting (tabular competitions)
+xgboost
+lightgbm
+# catboost  # uncomment if needed
+
+# Visualization
+matplotlib
+seaborn
+
+# Experiment tracking
+wandb
+
+# Kaggle CLI
+kaggle
+
+# === Add competition-specific libraries below ===
+# Deep Learning: torch, torchvision, torchaudio
+# NLP: transformers, tokenizers
+# Audio: librosa, torchaudio
+# Vision: albumentations, timm
+# Optimization: optuna
+# Faster dataframes: polars

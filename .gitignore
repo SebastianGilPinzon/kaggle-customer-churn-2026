@@ -1,0 +1,57 @@
+# === DATA (never commit) ===
+data/
+*.csv
+*.parquet
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.gz
+*.feather
+
+# === MODELS (never commit) ===
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# === OUTPUT ===
+output/
+outputs/
+
+# === CREDENTIALS (CRITICAL — never commit) ===
+.env
+.env.*
+kaggle.json
+*.json.bak
+secrets/
+credentials/
+
+# === JUPYTER ===
+.ipynb_checkpoints/
+
+# === PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# === EXPERIMENT TRACKING ===
+wandb/
+mlruns/
+*.log
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE ===
+.vscode/
+.idea/
