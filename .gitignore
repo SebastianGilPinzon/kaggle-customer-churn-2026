@@ -1,6 +1,7 @@
 # === DATA (never commit) ===
 data/
-*.csv
+data-kaggle/
+data-original/
 *.parquet
 *.npy
 *.npz

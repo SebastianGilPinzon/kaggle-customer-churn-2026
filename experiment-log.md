@@ -7,8 +7,8 @@
 
 | # | Date | Type | What Changed | CV Score | CV Std | LB Score | Submitted? | Commit | Seed | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | YYYY-MM-DD | baseline | Initial XGBoost, default params | 0.XXX | 0.XXX | 0.XXX | Yes | abc123 | 42 | First submission |
-| 2 | YYYY-MM-DD | feature | Added day_of_week feature | 0.XXX | 0.XXX | — | No (CV worse) | def456 | 42 | No improvement |
+| 1 | 2026-03-27 | baseline | LightGBM, 27 features, original merged, 5-fold | 0.9151 | ~0.001 | TBD | Pending | — | 42 | First model. Top features: AvgSpend, TotalCharges, MonthlyCharges |
+| 2 | 2026-03-27 | ensemble | LGB+XGB+CatBoost, 40+ features, freq encoding | TBD | TBD | TBD | Pending | — | 42 | Training in progress |
 
 ### Column Guide
 - **Type:** baseline / feature / model / tuning / ensemble / postprocess / bugfix
@@ -25,8 +25,8 @@
 > If CV-LB gap changes direction for 3+ consecutive submissions → STOP and re-evaluate CV strategy.
 
 ## Current Best
-- **Best CV:** Experiment #[N] — [brief description]
-- **Best LB:** Experiment #[N] — [brief description]
+- **Best CV:** Experiment #1 — LightGBM baseline, OOF AUC 0.9151
+- **Best LB:** TBD — no submissions yet
 
 ## Selected Final Submissions
 - **Final 1:** Experiment #[N] — [reasoning: conservative/aggressive, CV trust level]

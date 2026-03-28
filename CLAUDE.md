@@ -78,15 +78,15 @@ BEFORE moving to any new phase, you MUST update `docs/MASTER.md` with:
 This is a GATE — do not proceed to the next phase without this update.
 
 ## Current Status
-- **Phase:** [current methodology phase]
-- **Best CV score:** [score] (experiment #[N])
-- **Best LB score:** [score] (experiment #[N])
-- **Submissions used today:** [X/Y]
-- **Days remaining:** [N]
+- **Phase:** Phase 3 — Baseline + first ensemble
+- **Best CV score:** 0.9151 (experiment #1, LightGBM)
+- **Best LB score:** TBD (no submissions yet)
+- **Submissions used today:** 0/5
+- **Days remaining:** 4
 - **Progress:**
   - [x] Phase 1: Research & EDA
-  - [ ] Phase 2: Strategy
-  - [ ] Phase 3: Baseline
+  - [x] Phase 2: Strategy
+  - [x] Phase 3: Baseline
   - [ ] Phase 3B: Iterations
   - [ ] Phase 3C: Ensembling
   - [ ] Phase 4: Pre-Submission Audit
@@ -127,6 +127,6 @@ Follow `../kaggle-hq/methodology/COMPETITION_METHODOLOGY.md` for all work.
 - **Auto-update:** after every submission, update Current Status section above
 
 ## Reproducibility
-- **Random seed:** [SEED — set once, document here, use everywhere]
-- **Python version:** [match Kaggle kernel version]
-- **Key library versions:** [pin versions that matter]
+- **Random seed:** 42
+- **Python version:** 3.11
+- **Key library versions:** lightgbm, xgboost, catboost, scikit-learn, optuna
