@@ -109,8 +109,8 @@ for fold,(tr,val) in enumerate(skf.split(train,y)):
     m=xgb.XGBClassifier(objective='binary:logistic',eval_metric='auc',learning_rate=0.05,
         max_depth=7,min_child_weight=5,subsample=0.8,colsample_bytree=0.8,
         reg_alpha=0.1,reg_lambda=1.0,n_estimators=2000,random_state=SEED,
-        tree_method='hist',n_jobs=-1,verbosity=0)
-    m.fit(X_tr,y_tr,eval_set=[(X_val,y_val)],verbose=False,early_stopping_rounds=50)
+        tree_method='hist',n_jobs=-1,verbosity=0,early_stopping_rounds=50)
+    m.fit(X_tr,y_tr,eval_set=[(X_val,y_val)],verbose=False)
     oof_x[val]=m.predict_proba(X_val)[:,1]; tp_x+=m.predict_proba(test)[:,1]/5
     ax=roc_auc_score(y_val,oof_x[val])
 

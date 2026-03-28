@@ -82,6 +82,7 @@ id,Churn
 | # | Version | CV Score | LB Score | Key Change |
 |---|---------|----------|----------|------------|
 | 1 | v01_lgb_quick | 0.9151 | TBD | LightGBM, 27 features, 5-fold, original merged |
+| 2 | v02_ensemble3 | 0.9159 | TBD | LGB+XGB+CAT, 56 features, optimized weights (0.15/0.45/0.40) |
 
 ## 5. Strategy
 

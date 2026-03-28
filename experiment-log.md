@@ -8,7 +8,7 @@
 | # | Date | Type | What Changed | CV Score | CV Std | LB Score | Submitted? | Commit | Seed | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 2026-03-27 | baseline | LightGBM, 27 features, original merged, 5-fold | 0.9151 | ~0.001 | TBD | Pending | — | 42 | First model. Top features: AvgSpend, TotalCharges, MonthlyCharges |
-| 2 | 2026-03-27 | ensemble | LGB+XGB+CatBoost, 40+ features, freq encoding | TBD | TBD | TBD | Pending | — | 42 | Training in progress |
+| 2 | 2026-03-27 | ensemble | LGB+XGB+CatBoost, 56 features, freq encoding | 0.9159 | ~0.001 | TBD | Pending | — | 42 | LGB=0.9154, XGB=0.9157, CAT=0.9156. Optimized w: 0.15/0.45/0.40 |
 
 ### Column Guide
 - **Type:** baseline / feature / model / tuning / ensemble / postprocess / bugfix
@@ -25,7 +25,7 @@
 > If CV-LB gap changes direction for 3+ consecutive submissions → STOP and re-evaluate CV strategy.
 
 ## Current Best
-- **Best CV:** Experiment #1 — LightGBM baseline, OOF AUC 0.9151
+- **Best CV:** Experiment #2 — 3-model ensemble, OOF AUC 0.9159
 - **Best LB:** TBD — no submissions yet
 
 ## Selected Final Submissions
