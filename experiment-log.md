@@ -9,6 +9,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 2026-03-27 | baseline | LightGBM, 27 features, original merged, 5-fold | 0.9151 | ~0.001 | TBD | Pending | — | 42 | First model. Top features: AvgSpend, TotalCharges, MonthlyCharges |
 | 2 | 2026-03-27 | ensemble | LGB+XGB+CatBoost, 56 features, freq encoding | 0.9159 | ~0.001 | **0.91409** | Yes | 8332480 | 42 | LGB=0.9154, XGB=0.9157, CAT=0.9156. CV-LB gap: 0.002 |
+| 3 | 2026-03-28 | tuning | Tuned params + target enc + 3-seed avg, 71 feats | ~0.9156 | ~0.001 | 0.91401 | Yes | — | 42,1042,2042 | No improvement. Target encoding didn't help. |
 
 ### Column Guide
 - **Type:** baseline / feature / model / tuning / ensemble / postprocess / bugfix
