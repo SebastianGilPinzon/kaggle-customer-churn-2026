@@ -86,6 +86,8 @@ id,Churn
 | 3 | v03_tuned_multiseed | ~0.9156 | 0.91401 | Tuned params + target enc + 3 seeds, 71 features. No improvement. |
 | 4 | v04_exhaustive_fe | 0.9159 | **0.91426** | 134 features, groupby aggs, interactions. NEW BEST LB! CatBoost 50% weight. |
 | 6 | v06_stacking | 0.9149 | 0.913 | 10-model stack + upweight 10x. WORSE — upweight hurts. |
+| 7b | v07b_lite_stack | 0.9157 | 0.91392 | 7-GBDT stacking no upweight. Stacking didn't help. |
+| 8 | v08_multiseed | ~0.9160 | **0.91427** | v04 features + 5-seed avg. NEW BEST. Marginal gain. |
 
 ## 5. Strategy
 

@@ -1,0 +1,13 @@
+{
+  "id": "sebastiangil00/churn-v08-multiseed",
+  "title": "churn-v08-multiseed",
+  "code_file": "notebook.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "competition_sources": ["playground-series-s6e3"],
+  "dataset_sources": ["blastchar/telco-customer-churn"],
+  "kernel_sources": []
+}

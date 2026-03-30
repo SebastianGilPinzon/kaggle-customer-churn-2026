@@ -80,7 +80,7 @@ This is a GATE — do not proceed to the next phase without this update.
 ## Current Status
 - **Phase:** Phase 3 — Baseline + first ensemble
 - **Best CV score:** 0.9159 (experiment #2, 3-model ensemble)
-- **Best LB score:** 0.91426 (experiment #2, 3-model ensemble)
+- **Best LB score:** 0.91427 (experiment #2, 3-model ensemble)
 - **Submissions used today:** 2/5
 - **Days remaining:** 4
 - **Progress:**
