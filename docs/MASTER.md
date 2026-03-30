@@ -84,6 +84,8 @@ id,Churn
 | 1 | v01_lgb_quick | 0.9151 | TBD | LightGBM, 27 features, 5-fold, original merged |
 | 2 | v02_ensemble3 | 0.9159 | **0.91409** | LGB+XGB+CAT, 56 features, optimized weights (0.15/0.45/0.40) |
 | 3 | v03_tuned_multiseed | ~0.9156 | 0.91401 | Tuned params + target enc + 3 seeds, 71 features. No improvement. |
+| 4 | v04_exhaustive_fe | 0.9159 | **0.91426** | 134 features, groupby aggs, interactions. NEW BEST LB! CatBoost 50% weight. |
+| 6 | v06_stacking | 0.9149 | 0.913 | 10-model stack + upweight 10x. WORSE — upweight hurts. |
 
 ## 5. Strategy
 

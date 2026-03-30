@@ -1,0 +1,22 @@
+{
+  "version": "v06_stacking",
+  "n_models": 10,
+  "model_aucs": {
+    "lgb_v1": 0.914763,
+    "lgb_v2": 0.914672,
+    "lgb_dart": 0.913627,
+    "xgb_v1": 0.914898,
+    "xgb_v2": 0.914704,
+    "cat_v1": 0.914918,
+    "cat_v2": 0.914718,
+    "hgb": 0.914125,
+    "et": 0.911603,
+    "ridge": 0.911112
+  },
+  "simple_avg_auc": 0.91486,
+  "rank_avg_auc": 0.914853,
+  "stacking_auc": 0.914766,
+  "best_blend_auc": 0.914899,
+  "blend_weight": 0.3,
+  "feats": 62
+}
