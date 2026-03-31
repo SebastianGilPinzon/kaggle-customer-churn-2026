@@ -90,7 +90,16 @@ id,Churn
 | 8 | v08_multiseed | ~0.9160 | 0.91427 | v04 features + 5-seed avg. |
 | 9 | v09_no_original | 0.9168 | — | NO original data = best CV ever! |
 | 10 | v10_woe_rank | 0.9160 | — | WoE + rank + clusters. No improvement. |
-| 11 | v11_multiseed_no_orig | ~0.9168 | **0.91433** | v09 + 5 seeds. NEW BEST! Original data hurts. |
+| 11 | v11_multiseed_no_orig | ~0.9168 | 0.91433 | v09 + 5 seeds. Original data hurts. |
+| 12 | v12_blend_60 | — | 0.91431 | v11+v08 blend. No improvement. |
+| 13 | v13_catboost_solo | 0.9162 | — | CatBoost only. Worse than ensemble. |
+| 14 | v14_paradigm_shift | 0.9168 | 0.91423 | 12 models, 4 feature sets, hill climbing. |
+| **15** | **v15_final_blend** | — | **0.91434** | **v11(70)+v14(30). BEST LB.** |
+| 16 | v16_last_hope | — | 0.91432 | v11(75)+v08(25). No improvement. |
+
+### Final Submissions Selected
+- **Final 1:** v15 (LB 0.91434) — blend of diverse approaches
+- **Final 2:** v11 (LB 0.91433) — pure multi-seed without original data
 
 ## 5. Strategy
 
