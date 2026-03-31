@@ -1,0 +1,10 @@
+{
+  "cv_opt": 0.916767,
+  "weights": [
+    0.1,
+    0.45,
+    0.45
+  ],
+  "feats": 122,
+  "no_original": true
+}

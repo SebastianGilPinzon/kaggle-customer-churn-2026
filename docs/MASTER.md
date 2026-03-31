@@ -87,7 +87,10 @@ id,Churn
 | 4 | v04_exhaustive_fe | 0.9159 | **0.91426** | 134 features, groupby aggs, interactions. NEW BEST LB! CatBoost 50% weight. |
 | 6 | v06_stacking | 0.9149 | 0.913 | 10-model stack + upweight 10x. WORSE — upweight hurts. |
 | 7b | v07b_lite_stack | 0.9157 | 0.91392 | 7-GBDT stacking no upweight. Stacking didn't help. |
-| 8 | v08_multiseed | ~0.9160 | **0.91427** | v04 features + 5-seed avg. NEW BEST. Marginal gain. |
+| 8 | v08_multiseed | ~0.9160 | 0.91427 | v04 features + 5-seed avg. |
+| 9 | v09_no_original | 0.9168 | — | NO original data = best CV ever! |
+| 10 | v10_woe_rank | 0.9160 | — | WoE + rank + clusters. No improvement. |
+| 11 | v11_multiseed_no_orig | ~0.9168 | **0.91433** | v09 + 5 seeds. NEW BEST! Original data hurts. |
 
 ## 5. Strategy
 

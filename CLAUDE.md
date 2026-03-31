@@ -19,8 +19,10 @@ It contains the complete onboarding guide, all available tools, and lessons from
 2. Read `docs/MASTER.md` for full context and accumulated knowledge
 3. Read last 5 entries in `experiment-log.md`
 4. Read last 3 entries in `decision-log.md`
-5. Read `../kaggle-hq/playbook/strategies.md` and `../kaggle-hq/playbook/mistakes.md`
-6. Present a status summary and propose next action
+5. Read `../kaggle-hq/playbook/strategies/_index.md` to find which strategy files to read
+6. Read `../kaggle-hq/playbook/starter-packs/tabular.md` (your competition type bundle) and `../kaggle-hq/playbook/mistakes.md`
+6. Run `python ../kaggle-hq/scripts/knowledge-audit.py --repo . --mode session-start`
+7. Present a status summary and propose next action
 
 ## Available Tools (in `../kaggle-hq/scripts/`)
 - `status-dashboard.py` — **RUN FIRST** — complete state of all competitions
@@ -69,6 +71,15 @@ After completing each batch of experiments (or when told "don't stop"), generate
 Always maintain 5 ranked ideas. Execute in order unless user redirects.
 Base priorities on: what worked (strategies.md), what failed (mistakes.md), what's untried (experiment-log.md).
 
+### Knowledge Capture (Write Back to kaggle-hq)
+When you discover something reusable for OTHER competitions, write it IMMEDIATELY to kaggle-hq:
+- Platform quirk -> `../kaggle-hq/playbook/platforms.md`
+- Useful API or data source -> `../kaggle-hq/playbook/apis-and-data-sources.md`
+- Tool config that took >30 min to figure out -> `../kaggle-hq/playbook/tools.md`
+- Strategy that worked (with evidence) -> `../kaggle-hq/playbook/strategies.md`
+- Mistake that cost time or submissions -> `../kaggle-hq/playbook/mistakes.md`
+Do NOT wait until Phase 6. Capture immediately when the knowledge is fresh.
+
 ### Phase Summary Gate
 BEFORE moving to any new phase, you MUST update `docs/MASTER.md` with:
 - What was done in this phase
@@ -77,10 +88,16 @@ BEFORE moving to any new phase, you MUST update `docs/MASTER.md` with:
 - Open questions
 This is a GATE — do not proceed to the next phase without this update.
 
+
+## Session End Protocol
+**Before ending EVERY session, the AI must:**
+1. Update `HANDOFF.md` with: what was done, current score, next actions, blockers, modified files
+2. Check: did I discover anything reusable for OTHER competitions? If yes, write to `../kaggle-hq/playbook/`
+3. If unsure where to capture knowledge, append to `../kaggle-hq/inbox.md`
 ## Current Status
 - **Phase:** Phase 3 — Baseline + first ensemble
 - **Best CV score:** 0.9159 (experiment #2, 3-model ensemble)
-- **Best LB score:** 0.91427 (experiment #2, 3-model ensemble)
+- **Best LB score:** 0.91433 (experiment #2, 3-model ensemble)
 - **Submissions used today:** 2/5
 - **Days remaining:** 4
 - **Progress:**
